@@ -5,7 +5,7 @@ class GalleryImage(models.Model):
     CATEGORY_CHOICES = [
         ('Mosel', 'Mosel'),
         ('Eifel', 'Eifel'),
-        ('Hunsrück', 'Hunsrück'),
+        ('Hunsrueck', 'Hunsrueck'),
         ('Deutschland', 'Deutschland'),
         ('Architektur', 'Architektur'),
     ]

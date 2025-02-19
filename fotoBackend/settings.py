@@ -17,6 +17,13 @@ SECRET_KEY = 'django-insecure-4%^-!iz(n24+15550kk-5@7zijf7ry_c#2xiqp5=7#h+6cdu8h
 DEBUG = True
 ALLOWED_HOSTS = []
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:4200",
+]
+
+
 
 # Application definition
 
@@ -28,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'galleryapp',
+    'corsheaders',
     'rest_framework',
 ]
 
@@ -39,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'fotoBackend.urls'
